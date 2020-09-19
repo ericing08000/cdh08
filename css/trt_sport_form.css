@@ -1,0 +1,104 @@
+/*******************/
+/* Les sports */
+/*******************/
+body{
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.error{
+    background-color: lightcoral;
+    margin:10px 0;
+}
+
+#trt_sport_form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px #454545;
+}
+#trt_sport_form>h1{
+    margin-top: 0;
+}
+
+.trt_sport_form{
+    width: 100%;
+}
+
+
+.trt_sport_form fieldset{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    padding: 8px;
+}
+.trt_sport_form #photo{
+    padding: 5px;
+    border: 1px solid #454545;
+}
+.trt_sport_form fieldset.photo{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.photo>img{
+    width: 130px;
+    height: 130px;
+}
+
+.trt_sport_form label{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 180px;
+    margin: 0 10px;
+}
+
+.trt_sport_form input, select{
+    width: 75%;
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+
+
+.trt_sport_form fieldset.textarea{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px; 
+}
+.trt_sport_form fieldset.textarea p{
+    margin: 5px;
+    margin: 0;
+}
+.trt_sport_form .textarea textarea {
+    resize: none;
+    padding: 8px;
+    width: 558px;
+    margin: 10px auto ;
+    
+}
+
+.trt_sport_form .button{
+    display: flex;
+    justify-content: right;
+}
+
+.trt_sport_form button{
+    width: 100px;
+    padding: 5px;
+}
+
+#trt_sport_form a>button{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+}

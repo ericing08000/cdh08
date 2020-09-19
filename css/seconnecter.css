@@ -1,0 +1,178 @@
+/*******************/
+/* Se connecter */
+/*******************/
+body{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;  
+}
+#modal_seconnecter{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#error_signup{
+    background-color: #f08080;
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    font-size: 15px;
+}
+.close_seconnecter, .close_seconnecter_2{
+    color: #aaa;
+    text-align: right;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close_seconnecter:hover, .close_seconnecter_2:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close_seconnecter_2{
+    display: none;
+}
+  
+.seconnecter_container{
+    display: flex;
+    min-height: 71vh;
+}
+
+.seconnecter{
+    background-color: #fff;
+    width: 800px;
+    min-height: 500px;
+    margin: 130px auto 50px auto;
+    box-shadow: 3px 3px 10px #454545;
+}
+
+.seconnecter{
+    display: flex;
+    justify-content: center;
+}
+.seconnecter .logo{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+.seconnecter .logo img{
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+
+.seconnecter>hr{
+    margin: 10px 0;
+    border: none;
+    border-left: 1px solid #bbb;
+    
+}
+
+.seconnecter .input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 80%;
+}
+
+.seconnecter .input h3{
+    text-align: center;
+    margin: 0 0 5px 0;
+    color: #057cac;
+}
+
+
+.seconnecter .input form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.seconnecter .input hr{
+    margin: 10px;
+    border: none;
+    border-top: 1px solid #bbb;
+}
+.seconnecter .input input{
+    padding: 5px;
+    margin: 3px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px
+}
+.seconnecter .input input:hover{
+    
+    border: 1px solid #019dda;
+}
+.seconnecter .input button{
+    background-color: #019dda;
+    color: white;
+    padding: 5px;
+    margin: 15px auto;
+}
+.seconnecter .input button:hover{
+    background-color: #eee;
+    color: #454545;
+}
+
+
+
+
+
+.seconnecter .button{
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.seconnecter .button a{
+    text-decoration: none;
+    color: #454545;
+    margin: 3px;
+    font-size: 12px;
+}
+.seconnecter .button a:hover{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width:750px){
+    .seconnecter{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 100px auto 0 auto;
+        border: none;
+        box-shadow: none;
+    }
+    .seconnecter hr{
+        border:none;
+    }
+    .seconnecter .logo{
+        width: 100%;
+        margin: 10px 20px 0 20px;
+    }
+
+    .seconnecter .logo img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 0 auto;
+    }
+
+    .close_seconnecter{
+        display: none;
+    }
+    .close_seconnecter_2{
+        display: block;
+    }
+}

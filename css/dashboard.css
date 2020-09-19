@@ -1,0 +1,249 @@
+/*******************/
+/* Tableau de bord */
+/*******************/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#dashboard_container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ----------------------------- */
+/* Barre de navigation */
+/* ----------------------------- */
+#dashboard_navbar{
+    background-color: #0086C5;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    height: 100vh;
+}
+    /* Container user*/
+    #dashboard_navbar .user{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 49px;
+    }
+    #dashboard_navbar .user>img{
+        width: 30px;
+        height: 30px;
+        margin: 0 20px;
+    }
+    #dashboard_navbar .user>p{
+        padding: 10px;
+        margin: 0;
+        font-family: 'Segoe UI';
+        font-size: 18px;
+        color:white
+    }
+    #dashboard_navbar hr{
+        width: 90%;
+        margin: 0 auto;
+        color: #acacac;
+    }
+    #dashboard_navbar ul{
+        padding-left: 0;
+    }
+    #dashboard_navbar li{
+        list-style-type: none;
+    }
+    #dashboard_navbar a{
+        text-decoration: none;
+        padding: 10px 40px;
+        display: block;
+        font-family: 'Segoe UI';
+        color:white;  
+    }
+    
+    #dashboard_navbar a:hover{
+        background-color: whitesmoke;
+        color:#454545;
+    }
+    #dashboard_navbar a.active{
+        background-color: #454545;
+        color: #fff;
+    }
+
+
+/* ----------------------------- */
+/* --- Container Main ---- */
+/* ----------------------------- */
+#dashboard_main{
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    height: 100vh;
+}
+    /* Header */
+    #dashboard_main .header{
+        background-color: whitesmoke;
+        display: flex;
+        align-items: flex-end;
+        /* border-bottom : 3px solid #BED630; */
+        width: 100%;
+        min-height: 50px;
+    }
+    #dashboard_main hr{
+        background-color: #BED630;
+        margin: 0;
+        width: 100%;
+        height: 3px;
+        border: none;
+    }
+
+
+    /* -------------------- */
+    /* tables */
+    /* -------------------- */
+    #table{
+        margin: 15px;
+        height: 78vh;
+    }
+    
+    .table_head{
+        height: 40px;
+        background-color: antiquewhite;
+        /* border: 1px solid #111; */
+    }
+    .table_head table{
+        width: 100%;
+    }
+
+    .table{
+        height: 88%;
+        overflow-y: scroll;
+        border: 1px solid #111;
+    }
+
+    .table table{ 
+        width: 100%;
+        /* height: 100%;  */
+    }
+
+    #large{
+        width: 300px;
+    }
+    #petit{
+        width: 80px;
+    
+    }
+    tr:nth-child(even) {
+        background-color: #aaa;
+    }
+
+    table, th, td{
+        border: 1px solid #111;
+        text-align: center;
+        padding: 10px;
+        border-collapse: collapse;
+    }
+       
+    img.photo{
+        width: 50px;
+        height: 50px;
+        margin: 5px 0 0 0;
+    }
+    
+    #table button{
+        float: right;
+        margin-top: 10px;
+        padding: 5px;
+        width: 200px;
+    }
+
+    /* -------------------- */
+    /* Formulaire*/
+    /* -------------------- */
+    /* Container des formulaires */
+    #dashboard_content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;   
+    }
+
+    /* -- formulaire - Accueil -- */
+    #dashboard_content #form_evenement{
+        background-color: azure;
+        width: 100%;
+        height: 100%;   
+    }
+
+    /* -- formulaire - Bureau -- */
+    #dashboard_content #form_bureau{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* -- formulaire - Equipe -- */
+    #dashboard_content #form_equipe{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* -- formulaire - Les clubs -- */
+    #dashboard_content #form_club{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    /* -- formulaire - Les sports -- */
+    #dashboard_content #form_sport{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* -- formulaire - Recyclerie -- */
+    #dashboard_content #form_recyclerie{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* -- formulaire - Galerie -- */
+    #dashboard_content #form_galerie{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+    }
+    /* -- formulaire - Accueil -- */
+    #dashboard_content #form_partenaire{
+        background-color: azure;
+        width: 100%;
+        height: 100%;   
+    }
+
+    /* -- formulaire - Utilisateur -- */
+    #dashboard_content #form_user{
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* --------------- */
+    /* Footer */
+    /* --------------- */
+    #dashboard_main .footer{
+        background-color: #ffffff;
+        text-align: center;
+        border-top : 3px solid #EE1059;
+        width: 100%;
+    }
+
+    #dashboard_main .footer h4{
+        color: #454545;
+    }

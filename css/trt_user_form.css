@@ -1,0 +1,71 @@
+/*******************/
+/* Les utilisateurs */
+/*******************/
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.error{
+    background-color: lightcoral;
+    margin:10px 0;
+}
+
+#trt_user_form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px #454545;
+}
+#trt_user_form h1{
+    margin-top: 0;
+}
+
+.trt_user_form{
+    width: 100%;
+}
+
+.trt_user_form fieldset{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+.trt_user_form label{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 150px;
+    margin: 0 10px;
+}
+
+.trt_user_form input, select{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+
+.trt_user_form .button{
+    display: flex;
+    justify-content: right;   
+}
+
+.trt_user_form button{
+    width: 100px;
+    padding: 5px;
+}
+
+#trt_user_form a>button{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+}

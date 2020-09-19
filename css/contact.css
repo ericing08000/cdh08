@@ -1,0 +1,161 @@
+/*******************/
+/* Contactez-nous */
+/*******************/
+body{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*******************/
+/* a id="contact" */
+/*******************/
+a#btn_contact{
+    background: #019dda;
+    color: white;
+}
+
+/* ----------------------------- */
+/* -------- Parallax ----------- */
+/* ----------------------------- */
+.contact_parallax{
+    background-image: url('../image/photo/mds01.jpg');
+
+    /* Définir une hauteur spécifique */
+    height: 65vh;
+
+    /* Créer l'effet de défilement de parallaxe */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----------------------------- */
+/* ---- Contactez-nous --- */
+/* ----------------------------- */
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../image/banniere/cadre.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+}
+
+.contact .titre{
+    display: block;
+    
+}
+
+.contact h1{
+    margin: 10px 0 10px 30px;
+}
+
+.contact hr{
+    margin: 0 30px 0 30px;
+}
+
+/* ----------------------------- */
+/* ---- Coordonnées ------------ */
+/* ----------------------------- */
+.contact .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+}
+
+.contact_container h2{
+    display: flex;
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+    font-size: 20px;
+}
+
+.container figure{
+    display: flex;
+    justify-content: center;
+}
+.container figure .frame{
+    padding: 10px;
+    border: 1px solid #bbb;
+}
+
+.error{
+    background-color: lightcoral;
+    text-align: center;
+    margin:90px 0 10px 0;
+
+}
+.success{
+    background-color: #96bbbb;
+    text-align: center;
+    margin:90px 0 10px 0;
+
+}
+
+/* ------------------------ */
+/* ---- Formulaire -------- */
+/* ------------------------ */
+.contact div.form{
+    display: flex;
+    justify-content: center;
+}
+.contact form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 600px;
+    margin: 30px;
+}
+
+.contact form>input{
+    padding-left: 10px;
+    height: 30px;
+    margin: 3px 0;
+    border: 1px solid #bbb;
+}
+.contact form>input:hover{
+    border: 1px solid #019dda;
+}
+
+.contact form>textarea{
+    padding: 10px;
+    border: 1px solid #bbb;
+    resize: none;
+}
+.contact form>textarea:hover{
+    border: 1px solid #019dda;
+}
+.contact form>button{
+    margin: 20px auto;
+    padding: 5px 30px;
+}
+
+
+@media (max-width: 760px){
+
+    .contact{
+        background-image: none;
+        
+    }
+
+    .contact h1{
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        font-size: 25px;
+    }
+    .contact h2{
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        font-size: 20px;
+    }
+}

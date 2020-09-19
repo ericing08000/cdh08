@@ -1,0 +1,305 @@
+/*******************/
+/* Nos club */
+/*******************/
+body{
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.le_club_parallax{
+    background-image: url("../image/banniere/Bannière03.png ");
+    background-size: cover;
+    height: 30vh;
+    width: 100%; 
+}
+
+.le_club_parallax{
+    display: flex;  
+}
+
+.le_club_parallax h1{
+    display: flex;
+    text-align: center;
+    color:white;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    text-shadow: 3px 3px 5px black;
+    margin: auto auto auto 5%;
+    padding: 20px 20px; 
+}
+
+/* ------------------------------ */
+/* --------- Le club info  -------- */
+/* ------------------------------ */
+.le_club_info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+}
+
+/* Container : Public */
+.le_club_info .public{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.le_club_info .public a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.le_club_info .public img{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.le_club_info .public section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px 0;
+    width: 350px;
+}
+
+.le_club_info .public section h2{
+    display: flex;
+    justify-content: center;
+    background-color: #019dda;
+    padding: 10px;
+    margin: 0;
+}
+.le_club_info .public ul{
+    list-style-type: none;
+    border: thin solid #bbb;
+    margin: 0;
+    padding: 10px;
+}
+.le_club_info .public li{
+    padding: 8px 10px;
+    /* border-bottom: 0.5px solid #bbb;   */
+}
+
+
+/* Container : contact */
+.le_club_contact{
+    display: flex;
+    height: 550px;
+    margin: 30px 0;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: thin solid #bbb;
+    box-shadow: 2px 2px 5px #454545;
+}
+    /* --- Container : la table ------ */
+    .le_club_table{
+        display: flex;
+        flex-direction: column;
+        margin: 20px; 
+    }
+
+    .le_club_table table{
+        font-family: "Trebuchet MS";
+        font-size: 16px;
+        border-collapse: collapse;
+        width: 550px;
+        margin: 0;
+    }
+
+    .le_club_table th, .le_club_table td{
+        border: 1px solid #bbb;
+        padding: 8px;
+    }
+
+    .le_club_table th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #BED630;
+        color: #454545;
+    }
+
+    .le_club_table tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+
+    .le_club_table tr:hover{
+        background-color: #ddd;
+    }
+
+    .le_club_table>div{
+        display: flex;
+        
+        text-align: center;
+        margin:  auto;
+    }
+
+    .le_club_table a{ 
+        text-decoration: none;
+        background-color: #019dda;
+        padding: 10px;
+        margin: auto;
+        color: black;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #454545;
+    }
+    .le_club_table a:hover{
+        background: #eee;
+    }
+
+
+    /* Container : GoogleMaps */
+    .le_club_googleMaps{
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .le_club_googleMaps section{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+    }
+
+    .le_club_googleMaps figure{
+        display: flex;
+        justify-content: center;
+        margin: 20px 30px;
+    }
+    .le_club_googleMaps .frame{
+        padding: 10px;
+        border: 1px solid #bbb;
+        width: 400px;
+        height: 500px;
+    }
+
+
+/* Container : Sports */
+.le_club_sport h1{
+    margin: 10px 0 10px 30px;
+}
+
+.le_club_sport hr{
+    margin: 0 30px 0 30px;
+}
+
+.le_club_sport div{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+.le_club_sport ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.le_club_sport li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px;
+    background-color: #019dda;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #454545;
+}
+.le_club_sport li:hover{
+    transform: scale(1.1);
+    background-color: #eee;
+}
+
+.le_club_sport img{
+    width: 30px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.le_club_sport a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: auto;
+    color: black;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1475px){
+    .le_club_parallax h1{   
+        font-size: 30px;   
+    }
+    .le_club_info .public{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 1200px;
+    }
+    .le_club_info .public a{
+        margin: auto 0px;
+    }
+    .le_club_table>div{
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:500px){
+    .le_club_parallax h1{   
+        font-size: 20px;   
+    }
+
+    .le_club_info .public{
+        flex-direction: column;
+    }
+    .le_club_info .public section{
+        width: 320px;
+        margin: auto;
+    }
+    .le_club_table{
+        margin: 10px;
+    }
+    .le_club_table table{
+        font-size: 12px;
+        width: 320px;       
+    }
+    .le_club_contact{
+        max-height: 400px;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+    .le_club_googleMaps .frame{
+        width: 300px;
+        height: 400px;
+    }
+    .le_club_sport div{
+        margin:15px 0 15px 0;
+    }
+    .le_club_sport h1{
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        font-size: 25px;
+    }
+    .le_club_sport ul{
+        margin: 0;
+        padding-left: 0px;
+    }
+    .le_club_sport li{
+        display: block;
+        width: 230px;
+        
+    }
+    .le_club_sport a{
+        justify-content: space-evenly;
+
+    }
+}

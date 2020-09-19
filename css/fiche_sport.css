@@ -1,0 +1,180 @@
+/*******************/
+/* Nos sports */
+/*******************/
+body{
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*******************/
+/* a id="sport" */
+/*******************/
+a#sport{
+    background: #019dda;
+    color: white;
+}
+
+/* ----------------------------- */
+/* -------- Parallax ----------- */
+/* ----------------------------- */
+.fiche_sport_parallax{
+    background-image: url("../image/banniere/Bannière03.png ");
+
+    /* Définir une hauteur spécifique */
+    height: 30vh;
+
+    /* Créer l'effet de défilement de parallaxe */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fiche_sport_parallax{
+    display: flex;  
+}
+.fiche_sport_parallax h1{
+    display: flex;
+    text-align: center;
+    color:white;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    text-shadow: 3px 3px 5px black;
+    margin: auto auto auto 5%;
+    padding: 20px 20px; 
+}
+
+/* ----------------------------- */
+/* ---- La fiche sport --- */
+/* ----------------------------- */
+
+.fiche_sport h1{
+    margin: 10px 0 10px 30px;
+}
+
+.fiche_sport>hr{
+    margin: 0 30px 0 30px;
+}
+
+.fiche_sport section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.fiche_sport ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fiche_sport li{
+    list-style-image: url('../image/icon/cdh08_32.ico');
+    font-size: 18px;
+    margin: 10px 50px;
+    padding:0;
+}
+.fiche_sport section p{
+    display: flex;
+    padding: 20px 40px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.6;   
+}
+.fiche_sport_download{
+    /* background-color: blue; */
+    text-align: center;
+}
+.fiche_sport_download>a{
+    background-color: #454545;
+    text-decoration: none;
+    padding: 10px;
+    color: #eee;
+}
+.fiche_sport_download>a:hover{
+    background-color: #019dda;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.fiche_sport_club h1{
+    margin: 10px 0 10px 30px;
+}
+
+.fiche_sport_club>hr{
+    margin: 0 30px 0 30px;
+}
+
+
+/* Card du club */
+.fiche_sport_card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 20px;
+    flex-wrap: wrap;
+}
+.fiche_sport_card .card{
+    box-shadow: 2px 2px 5px #454545;
+    width: 230px;
+   
+    margin: 20px 15px;
+}
+.fiche_sport_card figure{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}    
+
+.fiche_sport_card img{
+    max-width: 150px;
+    height: 100px;
+    margin: 10px auto 10px auto;    
+}
+
+.fiche_sport_card figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #019dda;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    min-height: 40px;
+}
+
+.fiche_sport_card a{
+    text-decoration: none;
+}
+.fiche_sport_card .card:hover{
+    transform: scale(1.05);
+    background-color: #eee;
+}
+
+
+
+@media (max-width: 760px){
+
+    .fiche_sport h1{
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        font-size: 25px;
+    }
+    .fiche_sport hr{
+        margin: 0 20px;
+    }
+    .fiche_sport_card{
+        justify-content: center;
+    }
+
+    .fiche_sport_club h1{
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        font-size: 25px;
+    }
+    .fiche_sport_card .card{
+        width: 280px;
+        margin: 15px;
+    }
+    
+}

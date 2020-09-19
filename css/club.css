@@ -1,0 +1,142 @@
+/*******************/
+/* Nos sports */
+/*******************/
+body{
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*******************/
+/* a id="sport" */
+/*******************/
+a#btn_club{
+    background: #019dda;
+    color: white;
+}
+
+/* ----------------------------- */
+/* -------- Parallax ----------- */
+/* ----------------------------- */
+.club_parallax{
+    background-image: url("../image/sport/sport00.jpg");
+
+    /* Définir une hauteur spécifique */
+    height: 50vh;
+
+    /* Créer l'effet de défilement de parallaxe */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.club_parallax{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column; 
+}
+
+.club_parallax h2{
+    color:white;
+    font-family: 'Segoe UI';
+    font-size: 45px;
+    text-shadow: 3px 3px 5px black;
+    margin: 0;
+}
+.club_parallax div{
+    background: #019dda;
+    margin: 0 auto 0 auto;
+    padding: 15px 0;
+    box-shadow: 3px 3px 10px black;
+}
+.club_parallax div:hover{
+    color:#019dda;
+    background-color: #fff;
+}
+.club_parallax a{ 
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+.club_parallax a:hover{
+    color:#019dda;
+}
+
+/* ------------------------------ */
+/* --------- Les clubs  -------- */
+/* ------------------------------ */
+
+    
+.club h1{
+    margin: 10px 0 10px 30px;
+}
+
+.club hr{
+    margin: 0 30px 0 30px;
+}
+
+.club_card{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    
+}
+
+.club_card .card{
+    box-shadow: 2px 2px 5px #454545;
+    width: 230px;
+    margin: 20px 15px;
+}
+.club_card figure{
+    margin: 0;
+}
+
+.club_card img{
+    max-width: 150px;
+    height: 100px;
+    margin: 10px auto 10px auto;    
+}
+
+.club_card figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #019dda;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    min-height: 38px;
+}
+
+.club_card a{
+    text-decoration: none;
+}
+.club_card .card:hover{
+    transform: scale(1.05);
+    background-color: #eee;
+}
+
+
+
+@media (max-width: 760px){
+
+    .club h1{
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        font-size: 25px;
+    }
+    .club_card .card{
+        width: 280px;
+        margin: 15px;
+    }
+    .club_parallax h2, .sport_parallax{
+        padding: 10px;
+        font-size: 28px;
+    }
+}

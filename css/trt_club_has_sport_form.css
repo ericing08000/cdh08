@@ -1,0 +1,79 @@
+/************************/
+/* Les club_has_sport */
+/************************/
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.error{
+    background-color: lightcoral;
+    margin:10px 0;
+}
+
+#trt_club_has_sport{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px #454545;
+}
+#trt_club_has_sport h1{
+    margin-top: 0;
+}
+#trt_club_has_sport>form{
+    margin-bottom: 0;
+}
+.trt_club_has_sport fieldset{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    padding: 8px;
+}
+.trt_club_has_sport>table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid #111;
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.trt_club_has_sport label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 0 10px;
+}
+
+.trt_club_has_sport input, select{
+    width: auto;
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+
+.trt_club_has_sport .button{
+    display: flex;
+    justify-content: right;   
+}
+
+.trt_club_has_sport button{
+    width: 100px;
+    padding: 5px;
+}
+
+#trt_club_has_sport a>button{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+}

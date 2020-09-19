@@ -1,0 +1,14 @@
+/*******************/
+/* Galerie */
+/*******************/
+body{
+    margin: 0;
+}
+
+/*******************/
+/* a id="galerie" */
+/*******************/
+a#btn_galerie{
+    background: #019dda;
+    color: white;
+}

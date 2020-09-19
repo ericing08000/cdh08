@@ -1,0 +1,175 @@
+/*******************/
+/* S'inscrire */
+/*******************/
+body{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;  
+}
+#modal_sinscrire{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#error_signin{
+    background-color: #f08080;
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    font-size: 15px;
+}
+.close_sinscrire, .close_sinscrire_2{
+    color: #aaa;
+    text-align: right;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close_sinscrire:hover, .close_sinscrire_2:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close_sinscrire_2{
+    display: none;
+}
+
+
+.sinscrire{
+    background-color: #fff;
+    width: 800px;
+    min-height: 500px;
+    margin: 130px auto 50px auto;
+    box-shadow: 3px 3px 10px #454545;
+
+}
+
+.sinscrire{
+    display: flex;
+    justify-content: center;
+
+}
+.sinscrire .logo{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+.sinscrire .logo img{
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+.sinscrire hr{
+    margin: 0;
+    border: none;
+    border-left: 1px solid #bbb;
+    
+}
+
+.sinscrire .input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 80%;
+}
+
+.sinscrire .input h3{
+    text-align: center;
+    margin: 0 0 5px 0;
+    color: #057cac;
+}
+
+.sinscrire .input form{
+    display: flex;
+    flex-direction: column;
+}
+.sinscrire .input>hr{
+    /* margin: 10px; */
+    border: none;
+    border-top: 1px solid #bbb;
+}
+.sinscrire .input input{
+    padding: 5px;
+    margin: 3px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px
+}
+.sinscrire .input input:hover{
+    
+    border: 1px solid #019dda;
+}
+.sinscrire .input button{
+    background-color: #019dda;
+    color: white;
+    padding: 5px;
+    margin: 15px auto;
+}
+.sinscrire .input button:hover{
+    background-color: #eee;
+    color: #454545;
+}
+
+.sinscrire .button{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+}
+.sinscrire .button p{
+    font-size: 15px;
+}
+
+.sinscrire .button a{
+    background-color: #019dda;
+    color: white;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.sinscrire .button a:hover{
+    background-color: #eee;
+    color: #454545;
+    cursor: pointer;
+}
+
+@media(max-width:750px){
+    
+    .sinscrire{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 100px auto 0 auto;
+        border: none;
+        box-shadow: none;
+        
+    }
+    .sinscrire hr{
+        border:none;
+    }
+    .sinscrire .logo{
+        width: 100%;
+        margin: 10px 20px 0 20px;
+    }
+
+    .sinscrire .logo img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 0 auto;
+    }
+    .close_sinscrire{
+        display: none;
+    }
+    .close_sinscrire_2{
+        display: block;
+    }
+
+}

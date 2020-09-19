@@ -1,0 +1,47 @@
+/***************************/
+/* Réinitialisation du mdp */
+/***************************/
+body{
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.error{
+    background-color: lightcoral;
+    margin:10px 0;
+}
+.success{
+    background-color: #b4dffc;
+    margin:10px 0;
+}
+
+#trt_reset_forgotMdp_form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 55%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px #454545;
+}
+#trt_reset_forgotMdp_form h3{
+    padding: 20px;
+}
+.trt_reset_forgotMdp_form .button{
+    display: flex;
+    justify-content: right;
+}
+
+.trt_reset_forgotMdp_form button{
+    width: 100px;
+    padding: 5px;
+}
+
+#trt_reset_forgotMdp_form a>button{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+}

@@ -1,0 +1,136 @@
+/*******************/
+/* Nos sports */
+/*******************/
+body{
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ----------------------------- */
+/* -------- Parallax ----------- */
+/* ----------------------------- */
+.fiche_evenement_parallax{
+    background-image: url("../image/banniere/Bannière03.png ");
+
+    /* Définir une hauteur spécifique */
+    height: 30vh;
+
+    /* Créer l'effet de défilement de parallaxe */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fiche_evenement_parallax{
+    display: flex;  
+}
+.fiche_evenement_parallax h1{
+    display: flex;
+    text-align: center;
+    color:white;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    text-shadow: 3px 3px 5px black;
+    margin: auto auto auto 5%;
+    padding: 20px 20px; 
+}
+
+/* ----------------------------- */
+/* ---- La fiche evenement --- */
+/* ----------------------------- */
+
+.fiche_evenement h1{
+    margin: 10px 0 10px 30px;
+}
+
+.fiche_evenement>hr{
+    margin: 0 30px 0 30px;
+}
+.date{
+    display: flex;
+    margin: 0 20px;
+}
+.date>div{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;  
+}
+.date>div p{
+    margin: 0 20px;  
+}
+
+.fiche_evenement section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.fiche_evenement ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fiche_evenement li{
+    list-style-image: url('../image/icon/cdh08_32.ico');
+    font-size: 18px;
+    margin: 10px 50px;
+    padding:0;
+}
+.fiche_evenement section p{
+    display: flex;
+    padding: 20px 40px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.6;   
+}
+.fiche_evenement_download{
+    /* background-color: blue; */
+    text-align: center;
+}
+.fiche_evenement_download>a{
+    background-color: #454545;
+    text-decoration: none;
+    padding: 10px;
+    color: #eee;
+}
+.fiche_evenement_download>a:hover{
+    background-color: #019dda;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.fiche_evenement_club h1{
+    margin: 10px 0 10px 30px;
+}
+
+.fiche_evenement_club>hr{
+    margin: 0 30px 0 30px;
+}
+
+
+
+@media (max-width: 760px){
+
+    .fiche_evenement h1{
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        font-size: 20px;
+    }
+    .fiche_evenement hr{
+        margin: 0 20px;
+    }
+    .date{
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .date>div h3{
+        margin: 5px 0;
+    }
+    .date>div p{
+        margin: 0 10px;
+    }
+}
