@@ -66,19 +66,40 @@
         <!------------------------->
         <!-- Gestion des erreurs -->
         <!------------------------->
+        
+                
+        <!------------------------->
+        <!-- Gestion des erreurs -->
+        <!------------------------->
         <?php
                 
         if(isset($_GET['error'])){
                 if($_GET['error'] ==1) {?>
                     <div class="error">
-                        <h3>Vous devez renseigner le prénom du membre de l'équipe.</h3>
+                        <h3>Vous devez renseigner le prénom du membre</h3>
                     </div>
                 <?php }
                     if($_GET['error'] ==2) {?>
                     <div class="error">
-                        <h3>Vous devez renseigner le nom du membre de l'équipe.</h3>
-                    </div>
-                <?php }} ?>
+                        <h3>Vous devez renseigner le nom du membre</h3>
+                    </div>    
+                <?php }
+                    if($_GET['error'] ==3) {?>
+                        <div class="error">
+                            <h3>Vous devez renseigner la désignation du membre</h3>
+                        </div>
+                    <?php }
+                        if($_GET['error'] ==4) {?>
+                            <div class="error">
+                                <h3>Vous devez ajouter une photo.</h3>
+                            </div>
+                        <?php }
+                            if($_GET['error'] ==5) {?>
+                                <div class="error">
+                                    <h3>Vous devez ajouter une légende à la photo.</h3>
+                                </div>
+                            <?php }
+            } ?>
 
         <!------------------------------------------>
         <!-- Formulaire de traitement Equipe -->
@@ -113,23 +134,23 @@
                 </fieldset>
                 <fieldset>
                     <label for="">Ajouter légende : </label>
-                    <input placeholder="Ajouter une légende à la photo" type="text" name="altPhotoEquipe" id="altPhotoEquipe" value="<?php if(isset($_GET['id'])){echo $donnees['altPhotoEquipe'];}?>">
+                    <input placeholder="Ajouter une légende à la photo*" type="text" name="altPhotoEquipe" id="altPhotoEquipe" value="<?php if(isset($_GET['id'])){echo $donnees['altPhotoEquipe'];}?>">
                 </fieldset>
             </div>
             <br>
             <fieldset>
                 <label for="">Prénom : </label>
-                <input placeholder="Prénom" type="text" name="prenomEquipe" id="prenomEquipe" value="<?php if(isset($_GET['id'])){echo $donnees['prenomEquipe'];}?>">
+                <input placeholder="Prénom*" type="text" name="prenomEquipe" id="prenomEquipe" value="<?php if(isset($_GET['prenom'])){echo $_GET['prenom'];}else{if(isset($_GET['id'])){ echo $donnees['prenomEquipe'];}}?>">
             </fieldset>
 
             <fieldset>
                 <label for="">Nom : </label>
-                <input placeholder="Nom" type="text" name="nomEquipe" id="nomEquipe" value="<?php if(isset($_GET['id'])){echo $donnees['nomEquipe'];}?>">
+                <input placeholder="Nom*" type="text" name="nomEquipe" id="nomEquipe" value="<?php if(isset($_GET['nom'])){echo $_GET['nom'];}else{if(isset($_GET['id'])){echo $donnees['nomEquipe'];}}?>">
             </fieldset>
 
             <fieldset>
                 <label for="">Désignation : </label>
-                <input placeholder="Désignation" type="text" name="designationEquipe" id="designationEquipe" value="<?php if(isset($_GET['id'])){echo $donnees['designationEquipe'];}?>">
+                <input placeholder="Désignation*" type="text" name="designationEquipe" id="designationEquipe" value="<?php if(isset($_GET['designation'])){echo $_GET['designation'];}else{if(isset($_GET['id'])){echo $donnees['designationEquipe'];}}?>">
             </fieldset>
             <fieldset class="buttonRadio">
                 <label for="">Status : </label>

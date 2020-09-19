@@ -127,17 +127,17 @@
                 </fieldset>
                 <fieldset>
                     <label for="">Ajouter une légende : </label>
-                    <input placeholder="Ajouter une légende à la photo" type="text" name="altPhotoMateriel" id="altPhotoMateriel" value="<?php if(isset($_GET['alt'])){echo $_GET['alt'];}else{if(isset($_GET['id'])){echo $donnees['altPhotoMateriel'];}}?>">
+                    <input placeholder="Ajouter une légende à la photo*" type="text" name="altPhotoMateriel" id="altPhotoMateriel" value="<?php if(isset($_GET['alt'])){echo $_GET['alt'];}else{if(isset($_GET['id'])){echo $donnees['altPhotoMateriel'];}}?>">
                 </fieldset>
             </div>
             <br>
             <fieldset>
                 <label for="">Nom du matériel: </label>
-                <input placeholder="Nom du matériel" type="text" name="nomMateriel" id="nomMateriel" value="<?php if(isset($_GET['nomMateriel'])){echo $_GET['nomMateriel'];}else{if(isset($_GET['id'])){echo $donnees['nomMateriel'];}}?>">
+                <input placeholder="Nom du matériel*" type="text" name="nomMateriel" id="nomMateriel" value="<?php if(isset($_GET['nomMateriel'])){echo $_GET['nomMateriel'];}else{if(isset($_GET['id'])){echo $donnees['nomMateriel'];}}?>">
             </fieldset>
             <fieldset>
                 <label for="">Quantité: </label>
-                <input placeholder="Indiquez une quantité" type="text" name="quantiteMateriel" id="quantiteMateriel" value="<?php if(isset($_GET['quantiteMateriel'])){echo $_GET['quantiteMateriel'];}else{if(isset($_GET['id'])){echo $donnees['quantiteMateriel'];}}?>">
+                <input placeholder="Indiquez une quantité*" type="text" name="quantiteMateriel" id="quantiteMateriel" value="<?php if(isset($_GET['quantiteMateriel'])){echo $_GET['quantiteMateriel'];}else{if(isset($_GET['id'])){echo $donnees['quantiteMateriel'];}}?>">
             </fieldset>
 
             

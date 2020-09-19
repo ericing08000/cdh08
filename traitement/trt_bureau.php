@@ -19,6 +19,7 @@ $photoBureau = htmlspecialchars(!empty($_FILES['downloadPhoto']['name']) ? $_FIL
 $altPhoto = trim(htmlspecialchars(!empty($_POST['altPhoto']) ? $_POST['altPhoto'] : NULL, ENT_QUOTES));
 $statusBureau = htmlspecialchars(!empty($_POST['statusBureau']) ? $_POST['statusBureau'] : NULL, ENT_QUOTES);
 $photoDefaut = 'imageDefaut.png';
+
 // $mdpUser = !empty($_POST['mdpUser']) ? $_POST['mdpUser'] : NULL;
 // echo($prenomBureau);
 // echo($nomBureau);
@@ -50,45 +51,69 @@ switch ($designationBureau){
 if($_GET['method'] == 'insert'){
     //echo('Ajouter un membre');
 
-    //Gestion de l'envoi et l'enregistrement de la photo
-    if($_FILES['downloadPhoto']['error'] == 0)
-    {
-        //Dans le cas ou la photo est télécharger
-        copy( $_FILES['downloadPhoto']['tmp_name'] , "../image/photo/".$_FILES['downloadPhoto']['name']);
-    }
-    if($_FILES['downloadPhoto']['error'] == 0){
-        // S'il y a une photo : 
-        $sql = $bdd->prepare ("INSERT INTO bureau (prenomBureau, nomBureau, classementBureau,  designationBureau, photoBureau, altPhoto, statusBureau )
-        VALUES ( :prenomBureau, :nomBureau, :classementBureau, :designationBureau, :photoBureau, :altPhoto, :statusBureau)");
-        // On éxecute la requête «$sql»:
-        $sql->execute(array(
-            'prenomBureau' => $prenomBureau,
-            'nomBureau' => $nomBureau,
-            'classementBureau' => $classementBureau,
-            'designationBureau' => $designationBureau,
-            'photoBureau' => $photoBureau,
-            'altPhoto' => $altPhoto,
-            'statusBureau' => $statusBureau
-        ));
+    if(empty($_POST['prenomBureau'])){
+        header('location:trt_bureau_form.php?error=1&prenom='.$prenomBureau.'&nom='.$nomBureau);
     }else{
-        // sinon pas de photo sélectionner mettre une photo par défaut : 
-        $sql = $bdd->prepare ("INSERT INTO bureau (prenomBureau, nomBureau, classementBureau, designationBureau, photoBureau, altPhoto, statusBureau )
-        VALUES ( :prenomBureau, :nomBureau, :classementBureau, :designationBureau, :photoBureau, :altPhoto, :statusBureau)");
-        // On éxecute la requête «$sql»:
-        $sql->execute(array(
-            'prenomBureau' => $prenomBureau,
-            'nomBureau' => $nomBureau,
-            'classementBureau' => $classementBureau,
-            'designationBureau' => $designationBureau,
-            'photoBureau' => $photoDefaut,
-            'altPhoto' => 'image par défaut',
-            'statusBureau' => $statusBureau
-        ));
-    }
-
-    //On revient sur la page
-    header('location:../dashboard#form_bureau');
+        if(empty($_POST['nomBureau'])){
+            header('location:trt_bureau_form.php?error=2&prenom='.$prenomBureau.'&nom='.$nomBureau);
         
+        }else{
+            //Vérifier qu'une photo a bien été sélectionner
+            if($_FILES['downloadPhoto']['error'] == 4){
+                header('location:trt_bureau_form.php?error=3&prenom='.$prenomBureau.'&nom='.$nomBureau);
+            }else{
+                //Gestion de l'envoi et l'enregistrement de la photo
+                if($_FILES['downloadPhoto']['error'] == 0){
+
+                    //Dans le cas ou la photo est télécharger
+                    copy( $_FILES['downloadPhoto']['tmp_name'] , "../image/photo/".$_FILES['downloadPhoto']['name']);
+                }
+                if($_FILES['downloadPhoto']['error'] == 0){
+                    // S'il y a une photo : 
+                    $sql = $bdd->prepare ("INSERT INTO bureau (prenomBureau, nomBureau, classementBureau,  designationBureau, photoBureau, altPhoto, statusBureau )
+                    VALUES ( :prenomBureau, :nomBureau, :classementBureau, :designationBureau, :photoBureau, :altPhoto, :statusBureau)");
+                    // On éxecute la requête «$sql»:
+                    $sql->execute(array(
+                        'prenomBureau' => $prenomBureau,
+                        'nomBureau' => $nomBureau,
+                        'classementBureau' => $classementBureau,
+                        'designationBureau' => $designationBureau,
+                        'photoBureau' => $photoBureau,
+                        'altPhoto' => $altPhoto,
+                        'statusBureau' => $statusBureau
+                    ));
+                }else{
+                    // sinon pas de photo sélectionner mettre une photo par défaut : 
+                    $sql = $bdd->prepare ("INSERT INTO bureau (prenomBureau, nomBureau, classementBureau, designationBureau, photoBureau, altPhoto, statusBureau )
+                    VALUES ( :prenomBureau, :nomBureau, :classementBureau, :designationBureau, :photoBureau, :altPhoto, :statusBureau)");
+                    // On éxecute la requête «$sql»:
+                    $sql->execute(array(
+                        'prenomBureau' => $prenomBureau,
+                        'nomBureau' => $nomBureau,
+                        'classementBureau' => $classementBureau,
+                        'designationBureau' => $designationBureau,
+                        'photoBureau' => $photoDefaut,
+                        'altPhoto' => 'image par défaut',
+                        'statusBureau' => $statusBureau
+                    ));
+                    // //On revient sur la page
+                    header('location:../dashboard#form_bureau');
+                }
+                //Vérifier s'il y a une légende pour la photo
+                if(empty($_POST['altPhoto'])){
+
+                    //On récupére le dernier enregistrement
+                    $req = $bdd->prepare("SELECT MAX(ID_Bureau) As max FROM bureau");
+                    $req-> execute();
+                    $donnees = $req->fetch();
+                    $max_ID_Bureau = $donnees['max'];
+
+                    //On revient sur la page d'édition
+                    header('location:../traitement/trt_bureau_form.php?error=4&id='.$max_ID_Bureau);
+                }
+            } 
+        }
+    }
 
 }elseif($_GET['method'] == 'delete'){
     

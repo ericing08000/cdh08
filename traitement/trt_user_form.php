@@ -102,19 +102,19 @@
             
                 <fieldset>
                     <label for="">Pseudo : </label>
-                    <input placeholder="Pseudo" type="text" name="pseudoUser" id="pseudoUser" 
+                    <input placeholder="Pseudo*" type="text" name="pseudoUser" id="pseudoUser" 
                     value="<?php if(isset($_GET['id'])){ echo $donnees['pseudoUser'];
                                 }else{ echo '';}?>" required>
                 </fieldset>
 
                 <fieldset>
                     <label for="">Prénom : </label>
-                    <input placeholder="Prénom" type="text" name="prenomUser" id="prenomUser" value="<?php if(isset($_GET['id'])){ echo $donnees['prenomUser'];}else{ echo '';}?>" required>
+                    <input placeholder="Prénom*" type="text" name="prenomUser" id="prenomUser" value="<?php if(isset($_GET['id'])){ echo $donnees['prenomUser'];}else{ echo '';}?>" required>
                 </fieldset>
 
                 <fieldset>
                     <label for="">Nom : </label>
-                    <input placeholder="Nom" type="text" name="nomUser" id="nomUser" value="<?php if(isset($_GET['id'])){ echo $donnees['nomUser'];}else{ echo '';}?>" required>
+                    <input placeholder="Nom*" type="text" name="nomUser" id="nomUser" value="<?php if(isset($_GET['id'])){ echo $donnees['nomUser'];}else{ echo '';}?>" required>
                 </fieldset>
             
                 <fieldset>
@@ -145,7 +145,7 @@
                 <?php if(!isset($_GET['id'])){?>                  
                     <fieldset>
                         <label for="">Mot de passe : </label>
-                        <input placeholder="Mot de passe" type="password" name="mdpUser" id="mdpUser" value="<?php if(isset($_GET['id'])){ echo $donnees['mdpUser'];}else{ echo '';}?>" required>
+                        <input placeholder="Mot de passe*" type="password" name="mdpUser" id="mdpUser" value="<?php if(isset($_GET['id'])){ echo $donnees['mdpUser'];}else{ echo '';}?>" required>
                     </fieldset>
                 <?php }?>
 

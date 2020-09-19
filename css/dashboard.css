@@ -173,28 +173,28 @@ body{
 
     /* -- formulaire - Accueil -- */
     #dashboard_content #form_evenement{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;   
     }
 
     /* -- formulaire - Bureau -- */
     #dashboard_content #form_bureau{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;
     }
     
     /* -- formulaire - Equipe -- */
     #dashboard_content #form_equipe{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;
     }
 
     /* -- formulaire - Les clubs -- */
     #dashboard_content #form_club{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;
     }
@@ -202,34 +202,34 @@ body{
 
     /* -- formulaire - Les sports -- */
     #dashboard_content #form_sport{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;
     }
 
     /* -- formulaire - Recyclerie -- */
     #dashboard_content #form_recyclerie{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;
     }
 
     /* -- formulaire - Galerie -- */
     #dashboard_content #form_galerie{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;
     }
     /* -- formulaire - Accueil -- */
     #dashboard_content #form_partenaire{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;   
     }
 
     /* -- formulaire - Utilisateur -- */
     #dashboard_content #form_user{
-        background-color: azure;
+        /* background-color: azure; */
         width: 100%;
         height: 100%;
     }

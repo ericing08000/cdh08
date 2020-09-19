@@ -123,13 +123,13 @@
                 </fieldset>
                 <fieldset>
                     <label for="">Ajouter une légende : </label>
-                    <input placeholder="Ajouter une légende à la photo" type="text" name="altPhotoPartenaire" id="altPhotoPartenaire" value="<?php if(isset($_GET['alt'])){echo $_GET['alt'];}else{if(isset($_GET['id'])){echo $donnees['altPhotoPartenaire'];}}?>">
+                    <input placeholder="Ajouter une légende à la photo*" type="text" name="altPhotoPartenaire" id="altPhotoPartenaire" value="<?php if(isset($_GET['alt'])){echo $_GET['alt'];}else{if(isset($_GET['id'])){echo $donnees['altPhotoPartenaire'];}}?>">
                 </fieldset>
             </div>
             <br>
             <fieldset>
                 <label for="">Nom du partenaire: </label>
-                <input placeholder="Nom du partenaire" type="text" name="nomPartenaire" id="nomPartenaire" value="<?php if(isset($_GET['nomPartenaire'])){echo $_GET['nomPartenaire'];}else{if(isset($_GET['id'])){echo $donnees['nomPartenaire'];}}?>">
+                <input placeholder="Nom du partenaire*" type="text" name="nomPartenaire" id="nomPartenaire" value="<?php if(isset($_GET['nomPartenaire'])){echo $_GET['nomPartenaire'];}else{if(isset($_GET['id'])){echo $donnees['nomPartenaire'];}}?>">
             </fieldset>
 
             

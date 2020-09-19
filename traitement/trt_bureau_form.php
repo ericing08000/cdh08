@@ -77,8 +77,19 @@
                     if($_GET['error'] ==2) {?>
                     <div class="error">
                         <h3>Vous devez renseigner le nom du membre.</h3>
-                    </div>
-                <?php }} ?>
+                    </div>    
+                <?php }
+                    if($_GET['error'] ==3) {?>
+                        <div class="error">
+                            <h3>Vous devez ajouter une photo.</h3>
+                        </div>
+                    <?php }
+                        if($_GET['error'] ==4) {?>
+                            <div class="error">
+                                <h3>Vous devez ajouter une légende à la photo.</h3>
+                            </div>
+                        <?php }
+            } ?>
 
         <!------------------------------------------>
         <!-- Formulaire de traitement Bureau -->
@@ -113,18 +124,19 @@
                 </fieldset>
                 <fieldset>
                     <label for="">Ajouter légende : </label>
-                    <input placeholder="Ajouter une légende à la photo" type="text" name="altPhoto" id="altPhoto" value="<?php if(isset($_GET['id'])){echo $donnees['altPhoto'];}?>">
+                    <input placeholder="Ajouter une légende à la photo*" type="text" name="altPhoto" id="altPhoto" value="<?php if(isset($_GET['id'])){echo $donnees['altPhoto'];}?>">
                 </fieldset>
             </div>
             <br>
             <fieldset>
                 <label for="">Prénom : </label>
-                <input placeholder="Prénom" type="text" name="prenomBureau" id="prenomBureau" value="<?php if(isset($_GET['id'])){echo $donnees['prenomBureau'];}?>">
+                <input placeholder="Prénom*" type="text" name="prenomBureau" id="prenomBureau" 
+                value="<?php if(isset($_GET['prenom'])){echo $_GET['prenom'];}else{if(isset($_GET['id'])){echo $donnees['prenomBureau'];}}?>">
             </fieldset>
 
             <fieldset>
                 <label for="">Nom : </label>
-                <input placeholder="Nom" type="text" name="nomBureau" id="nomBureau" value="<?php if(isset($_GET['id'])){echo $donnees['nomBureau'];}?>">
+                <input placeholder="Nom*" type="text" name="nomBureau" id="nomBureau" value="<?php if(isset($_GET['nom'])){echo $_GET['nom'];}else{if(isset($_GET['id'])){echo $donnees['nomBureau'];}}?>">
             </fieldset>
 
             <fieldset>
