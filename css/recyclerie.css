@@ -21,7 +21,7 @@ a#btn_recyclerie{
     background-image: url('../image/recyclerie/recyclerie.png');
 
     /* Définir une hauteur spécifique */
-    height: 58vh;
+    height: 35vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;

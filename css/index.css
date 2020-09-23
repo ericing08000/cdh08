@@ -25,7 +25,7 @@ a#btn_accueil{
     background-image: url('../image/photo/mds04.jpg');
 
     /* Définir une hauteur spécifique */
-    height: 58vh;
+    height: 50vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;

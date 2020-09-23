@@ -24,7 +24,7 @@ a#btn_sport{
     background-image: url('../image/sport/sport11.jpg');
 
     /* Définir une hauteur spécifique */
-    height: 60vh;
+    height: 50vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;

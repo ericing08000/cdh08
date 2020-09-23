@@ -21,7 +21,7 @@ a#btn_soutien{
     background-image: url("../image/banniere/Bannière03.png ");
 
     /* Définir une hauteur spécifique */
-    height: 30vh;
+    height: 40vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;
