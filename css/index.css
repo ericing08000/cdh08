@@ -21,6 +21,7 @@ a#btn_accueil{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .index_parallax{
+    margin-top: 85px;
     background-image: url('../image/photo/mds04.jpg');
 
     /* Définir une hauteur spécifique */

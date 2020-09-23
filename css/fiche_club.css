@@ -9,6 +9,7 @@ html {
 }
 
 .le_club_parallax{
+    margin-top: 85px;
     background-image: url("../image/banniere/Bannière03.png ");
     background-size: cover;
     height: 30vh;

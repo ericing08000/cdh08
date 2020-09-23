@@ -89,7 +89,13 @@
                                 <h3>Vous devez renseigner une description à l'énénement</h3>
                             </div>
                         
-                        <?php }} ?>
+                        <?php }
+                            if($_GET['error'] ==5) {?>
+                                <div class="error">
+                                    <h3>La date de début doit-être supérieure ou égal à la date du jour.</h3>
+                                </div>
+                                <?php }
+                    } ?>
 
         <!------------------------------------------>
         <!-- Formulaire de traitement Sport -->

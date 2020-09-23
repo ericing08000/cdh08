@@ -41,27 +41,32 @@ if($_GET['method'] == 'insert'){
                 header('location:trt_evenement_form.php?error=3&nom='.$nomEvenement.'&lieu='.$lieuEvenement.'&dateDebut='.$dateDebutEvenement.'&txt='.$txtEvenement);
                         
             }else{
-                if(empty($_POST['txtEvenement'])){
-                    header('location:trt_evenement_form.php?error=4&nom='.$nomEvenement.'&lieu='.$lieuEvenement.'&dateDebut='.$dateDebutEvenement.'&txt='.$txtEvenement);
+                if($_POST['dateDebutEvenement'] < date('Y-m-d')){
+                    header('location:trt_evenement_form.php?error=5&nom='.$nomEvenement.'&lieu='.$lieuEvenement.'&dateDebut='.$dateDebutEvenement.'&txt='.$txtEvenement);
                             
                 }else{
-                    //Préparation de requête pour l'insertion
-                    $sql = $bdd->prepare ("INSERT INTO evenement (nomEvenement, lieuEvenement, dateDebutEvenement, dateFinEvenement, txtEvenement, activiteEvenement, participantEvenement)
-                    VALUES (:nomEvenement, :lieuEvenement, :dateDebutEvenement, :dateFinEvenement, :txtEvenement, :activiteEvenement, :participantEvenement)");
-                    //On éxecute la requête «$sql»:
-                    $sql->execute(array(
-                        'nomEvenement' => $nomEvenement,
-                        'lieuEvenement' => $lieuEvenement,
-                        'dateDebutEvenement' => $dateDebutEvenement,
-                        'dateFinEvenement' => $dateFinEvenement,
-                        'txtEvenement' => $txtEvenement,
-                        'activiteEvenement' => $activiteEvenement,
-                        'participantEvenement' => $participantEvenement
+                    if(empty($_POST['txtEvenement'])){
+                        header('location:trt_evenement_form.php?error=4&nom='.$nomEvenement.'&lieu='.$lieuEvenement.'&dateDebut='.$dateDebutEvenement.'&txt='.$txtEvenement);
+                                
+                    }else{
+                        //Préparation de requête pour l'insertion
+                        $sql = $bdd->prepare ("INSERT INTO evenement (nomEvenement, lieuEvenement, dateDebutEvenement, dateFinEvenement, txtEvenement, activiteEvenement, participantEvenement)
+                        VALUES (:nomEvenement, :lieuEvenement, :dateDebutEvenement, :dateFinEvenement, :txtEvenement, :activiteEvenement, :participantEvenement)");
+                        //On éxecute la requête «$sql»:
+                        $sql->execute(array(
+                            'nomEvenement' => $nomEvenement,
+                            'lieuEvenement' => $lieuEvenement,
+                            'dateDebutEvenement' => $dateDebutEvenement,
+                            'dateFinEvenement' => $dateFinEvenement,
+                            'txtEvenement' => $txtEvenement,
+                            'activiteEvenement' => $activiteEvenement,
+                            'participantEvenement' => $participantEvenement
 
-                    ));
-                    
-                    //On revient sur la page
-                    header('location:../dashboard#form_evenement');
+                        ));
+                        
+                        //On revient sur la page
+                        header('location:../dashboard#form_evenement');
+                    }
                 }
             }
         }

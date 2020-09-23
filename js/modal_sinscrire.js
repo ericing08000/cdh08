@@ -1,10 +1,16 @@
 //fermer les modals
 $(document).ready(function(){
-//Fermer le modal création de compte avant d'ouvrir modal se connecter
+
+  //Fermer le modal s'inscrire avant d'ouvrir modal se connecter
   $("#btn_seconnecter").click(function(){
     $('#modal_sinscrire').hide();
     });
-        
+
+    //Fermer le modal se connecter
+    $("#btn_sinscrire").click(function(){
+      $('#modal_seconnecter').hide();
+    });  
+    
 });
 
 // Mettre le modal dans une variable

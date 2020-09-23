@@ -21,6 +21,7 @@ a#btn_contact{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .contact_parallax{
+    margin-top: 85px;
     background-image: url('../image/photo/mds01.jpg');
 
     /* Définir une hauteur spécifique */

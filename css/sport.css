@@ -20,6 +20,7 @@ a#btn_sport{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .sport_parallax{
+    margin-top: 85px;
     background-image: url('../image/sport/sport11.jpg');
 
     /* Définir une hauteur spécifique */

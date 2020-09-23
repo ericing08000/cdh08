@@ -21,6 +21,7 @@ a#btn_evenement{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .evenement_parallax{
+    margin-top: 85px;
     background-image: url("../image/banniere/Bannière03.png ");
 
     /* Définir une hauteur spécifique */
