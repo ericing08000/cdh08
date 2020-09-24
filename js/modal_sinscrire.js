@@ -4,12 +4,12 @@ $(document).ready(function(){
   //Fermer le modal s'inscrire avant d'ouvrir modal se connecter
   $("#btn_seconnecter").click(function(){
     $('#modal_sinscrire').hide();
-    });
+    }); 
 
-    //Fermer le modal se connecter
-    $("#btn_sinscrire").click(function(){
-      $('#modal_seconnecter').hide();
-    });  
+    // //Fermer le modal se connecter
+    // $("#btn_sinscrire").click(function(){
+    //   $('#modal_seconnecter').hide();
+    // });  
     
 });
 

@@ -1,13 +1,13 @@
 
 $(document).ready(function(){
   //Fermer la div success création de compte
-  $("#btn_seconnecter_nav").click(function(){
-    $('#success').hide();
-    });
-    //fermer le modal s'inscrire
-    $("#btn_seconnecter_nav").click(function(){
-      $('#modal_sinscrire').hide();
-      });
+  // $("#btn_seconnecter_nav").click(function(){
+  //   $('#success').hide();
+  //   });
+    // //fermer le modal s'inscrire
+    // $("#btn_seconnecter_nav").click(function(){
+    //   $('#modal_sinscrire').hide();
+    //   });
   //       //Fermer le modal se connecter
   //       $("#btn_sinscrire_seconnecter").click(function(){
   //         $('#modal_seconnecter').hide();

@@ -33,6 +33,7 @@ a#btn_soutien{
     display: flex;  
 }
 .soutien_parallax img{
+    margin: auto 0;
     width: 250px;
     height: 220px;
 }
