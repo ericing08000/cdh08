@@ -131,17 +131,10 @@ a#btn_sport{
         margin: 10px;
     }
 
-    .club h1{
-        text-align: center;
-        margin: 20px 10px 10px 10px;
-        font-size: 25px;
-    }
-    .club_card .card{
-        width: 280px;
-        margin: 15px;
-    }
-    .club_parallax h2, .sport_parallax h2{
-        padding: 10px;
+    
+    .sport_parallax h2{
+        margin: 0 20px;
+        padding:10px;
         font-size: 28px;
     }
 }

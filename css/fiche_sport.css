@@ -155,6 +155,9 @@ a#sport{
 
 
 @media (max-width: 760px){
+    .fiche_sport_parallax h1{
+       margin: auto;
+    }
 
     .fiche_sport h1{
         text-align: center;

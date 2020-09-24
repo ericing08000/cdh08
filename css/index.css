@@ -294,6 +294,7 @@ a#btn_accueil{
 
     .container_evenement{
         width: 100%;
+        max-height: 500px;
     }
     .index_intitule_slogan{
         flex-wrap: wrap;
@@ -319,6 +320,7 @@ a#btn_accueil{
         width: 100%;
         margin: 20px;
     }
+    
 
 
 }

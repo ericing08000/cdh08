@@ -75,7 +75,7 @@
                 else{   
                     if(data=='dateFin_inf'){
                         $('#error_pret').show();
-                        $('#error_pret').html("Veuillez saisir la date du début ou une date supérieure");
+                        $('#error_pret').html("Veuillez saisir la date du jour ou une date supérieure");
                         $('input#dateFin').val('');
                         $('input#dateFin').focus();
                 
