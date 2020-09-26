@@ -15,7 +15,7 @@ class  Database {
         $this->_username = $_username;
         $this->_password = $_password;
     }
-
+    //Créer des getters pour stocker des valeurs
     public function getHost(){
         return $this->_host;
     }
@@ -28,17 +28,18 @@ class  Database {
     public function getPassword(){
         return $this->_password;
     }
-
-    //fonction permettant de se connecter
+    //Fonction permettant de se connecter
     public function PDOConnexion() {
-        $bdd = new PDO('mysql:host='.$this->_host.' ; dbname='.$this->_dbname , $this->_username , $this->_password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+        $bdd = new PDO('mysql:host='.$this->_host.' ; dbname='.$this->_dbname , $this->_username , $this->_password,
+
+        //Permet de résoudre les problèmes de jeux de caractères (client Mysql)
+        array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
         
-        //set the PDO error mode to exception
+        //Définir le mode d'erreur PDO sur exception
         $bdd ->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
-
-        //faire un returne de la BDD ou nonn en fonction de la connexion
+        //faire un returne de la BDD ou non en fonction de la connexion
         return $bdd;
     }
 }

@@ -18,7 +18,9 @@
     <!-------------------------->
     <!------- Parallax --------->
     <!-------------------------->
-    <div class="contact_parallax"></div>
+    <div class="contact_parallax">
+        <h2>Contactez-nous</h2>
+    </div>
 
     <!-------------------------->
     <!-- Contactez-nous -->

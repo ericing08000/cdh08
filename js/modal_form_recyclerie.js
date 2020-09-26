@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
-  //Récupérer la valeur title du fichier recyclerie.php
+  //Récupérer l'attribu title du fichier recyclerie.php
   $(".card").click(function () {
   var title = $(this).attr("title");
 
     //renseigner la valeur du champ input "designation_materiel" de modal_recyclerie
     document.getElementById("designation_materiel").value = title.charAt(0).toUpperCase() + title.substring(1).toLowerCase();
 
-    //Ouvir modal avec le titre de la card 
+    //Ouvrir modal avec le titre de la card 
     document.getElementById("designation_materiel").title = title
     $("#modal_recyclerie").show();
       

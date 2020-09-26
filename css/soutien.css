@@ -17,11 +17,11 @@ a#btn_soutien{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .soutien_parallax{
-    margin-top: 85px;
+    
     background-image: url("../image/banniere/Bannière03.png ");
 
     /* Définir une hauteur spécifique */
-    height: 40vh;
+    height: 50vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;
@@ -33,7 +33,7 @@ a#btn_soutien{
     display: flex;  
 }
 .soutien_parallax img{
-    margin: auto 0;
+    margin: 100px 0;
     width: 250px;
     height: 220px;
 }
@@ -187,9 +187,13 @@ section.footer{
         display: flex; 
         align-items: center;
         flex-direction: column;
+        
+    }
+    .soutien_parallax img{
+        margin: 110px auto 0 auto;
     }
     .soutien_parallax h1{
-        margin: auto;
+        margin: 0 auto auto auto;
     }
     .formulaire .card{
         box-shadow: 2px 2px 5px #454545;
@@ -207,8 +211,8 @@ section.footer{
     }
 
     .soutien_parallax img{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     .soutien_parallax h1{
         font-size: 30px;

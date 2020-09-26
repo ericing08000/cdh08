@@ -21,11 +21,11 @@ a#btn_evenement{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .evenement_parallax{
-    margin-top: 85px;
+    
     background-image: url("../image/banniere/Bannière03.png ");
 
     /* Définir une hauteur spécifique */
-    height: 30vh;
+    height: 43vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;
@@ -34,7 +34,10 @@ a#btn_evenement{
     background-size: cover;
 }
 .evenement_parallax{
-    display: flex;  
+    display: flex; 
+    justify-content: left;
+    align-items: center;
+
 }
 .evenement_parallax h2{
     display: flex;
@@ -43,8 +46,7 @@ a#btn_evenement{
     font-family: 'Segoe UI';
     font-size: 40px;
     text-shadow: 3px 3px 5px black;
-    margin: auto auto auto 5%;
-    padding: 20px 20px; 
+    margin: 30px 0 0 50px;
 }
 
 /* --------------------------------- */

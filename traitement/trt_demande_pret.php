@@ -17,8 +17,6 @@ $data_recyclerie = $req_recyclerie ->fetch();
 
 //On vérifie que les «inputs» ne soient pas vides avant d’enregistrer dans la bdd :
 $designation_materiel = htmlspecialchars(!empty($_POST['designation_materiel']) ? $_POST['designation_materiel'] : NULL, ENT_QUOTES);
-
-
 $dateDebut = htmlspecialchars(!empty($_POST['dateDebut']) ? $_POST['dateDebut'] : NULL, ENT_QUOTES);
 $dateFin = htmlspecialchars(!empty($_POST['dateFin']) ? $_POST['dateFin'] : NULL, ENT_QUOTES);
 
@@ -49,10 +47,9 @@ $pseudo = $data_recyclerie['pseudoUser'];
 $nomComplet = $data_recyclerie['nomUser'].' '.$data_recyclerie['prenomUser'];
 $tel = $data_recyclerie['telUser'];
 $email = $data_recyclerie['emailUser'];
-
-
 $dateDebut = strtotime($dateDebut);
 strtotime($dateFin);
+
 //Envoyer le message par mail
 $mailTo = "aristo08000@gmail.com";
 $sujetContact = 'Demande de prêt';
@@ -74,7 +71,4 @@ mail($mailTo, $sujetContact,  $messageContact);
 // On revient sur la page
 $success= '?success=2';
 header("Location: http://$url$success");
-
-
-
 ?>

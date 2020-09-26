@@ -114,20 +114,20 @@ if(isset($_SESSION['pseudoUser'])){
 <!-- Gestion des erreurs -->
 <!----------------------------->   
 <?php
-//Vérifier s'il y a une variable error
+//Vérifier s'il y a une variable success
     if(isset($_GET['success'])){
         if($_GET['success']==1){?>
-            <div id="success_nav" class="success">
+            <div id="success_nav" class="success" style="margin-top:85px">
                 <h3>Votre inscription a bien été enregistrée, vous pouvez vous connecter.</h3>    
             </div>    
         <?php }
             if($_GET['success']==2){?>
-                <div id="success_nav" class="success">
+                <div id="success_nav" class="success" style="margin-top:85px">
                     <h3>Votre demande de prêt a bien été pris en compte.</h3>    
                 </div>    
             <?php }
                 if($_GET['success']==3){?>
-                    <div id="success_nav" class="success">
+                    <div id="success_nav" class="success" style="margin-top:85px">
                         <h3>Un email vous a été envoyé , vous pouvez réinitialiser votre mot de passe en cliquant sur le lien.</h3>    
                         </div>    
                         <?php }

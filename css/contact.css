@@ -21,17 +21,33 @@ a#btn_contact{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .contact_parallax{
-    margin-top: 85px;
+   
     background-image: url('../image/photo/mds01.jpg');
 
     /* Définir une hauteur spécifique */
-    height: 40vh;
+    height: 55vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.contact_parallax{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column; 
+}
+.contact_parallax h2{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-family: 'Segoe UI';
+    font-size: 45px;
+    text-shadow: 3px 3px 5px black;
+    margin: auto;
+    
 }
 
 /* ----------------------------- */
@@ -143,6 +159,10 @@ a#btn_contact{
 
 
 @media (max-width: 760px){
+    .contact_parallax h2{
+        width: 100%;
+        font-size: 25px;
+    }
 
     .contact{
         background-image: none;

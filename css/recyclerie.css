@@ -17,11 +17,11 @@ a#btn_recyclerie{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .recyclerie_parallax{
-    margin-top: 85px;
+    
     background-image: url('../image/recyclerie/recyclerie.png');
 
     /* Définir une hauteur spécifique */
-    height: 35vh;
+    height: 48vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;

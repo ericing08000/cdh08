@@ -20,11 +20,11 @@ a#btn_comite{
 /* -------- Parallax ----------- */
 /* ----------------------------- */
 .comite_parallax{
-    margin-top: 85px;
+    
     background-image: url('../image/photo/mds00.jpg');
 
     /* Définir une hauteur spécifique */
-    height: 50vh;
+    height: 58vh;
 
     /* Créer l'effet de défilement de parallaxe */
     background-attachment: fixed;
