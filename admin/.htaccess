@@ -1,0 +1,6 @@
+AuthName "Zone Administrateur"
+AuthType Basic
+AuthUserFile C:\wamp\www\cdh08\admin\.htpasswd
+Require valid-user
+
+ErrorDocument 401 /cdh08/index.php

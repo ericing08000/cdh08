@@ -76,7 +76,7 @@
     <!-- footer partie 5 -->
     <!-------------------------->
     <footer class="footer5">
-        <h4>&copy Comité Départemental Handisport Des Ardennes</h4>
+        <h4 title ="Comité Départemental Handisport Des Ardennes">&copy Comité Départemental Handisport Des Ardennes</h4>
         <div>
         <a id="top" href="#" title="Retour en haut de la page"><img class="back" src="image/icon/retourHaut.png" alt="retour en haut de la page"></a>
     </div>

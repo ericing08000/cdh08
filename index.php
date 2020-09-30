@@ -65,7 +65,7 @@ $bdd = $connect->PDOConnexion();
                                 <p style="font-size:25px; margin-top:0; margin-bottom:10px"><?= strftime("%d", $dateDebut);?></p>
                             </div>
                             
-                            <div class="text">
+                            <div class="text" title="<?=$data_evenement['nomEvenement'];?>">
                                 <a href="fiche_evenement.php?id=<?= $data_evenement['ID_Evenement'];?>"><?=$data_evenement['nomEvenement'];?></a>
                                 <p><?= mb_substr($data_evenement['txtEvenement'], 0,250)." ...";?></p>
                             </div>
@@ -91,7 +91,7 @@ $bdd = $connect->PDOConnexion();
                             setlocale (LC_TIME, 'fr_FR.utf8','fra');
                             //Convertir la chaîne datetype en date
                             $dateDebut = strtotime($data_req_evenement['dateDebutEvenement']);?>   
-                            <li>
+                            <li title="<?=$data_req_evenement['nomEvenement'];?>">
                                 <p><?=$data_req_evenement['nomEvenement'];?></p> 
                                 <p><?= strftime("%d %B %Y", $dateDebut);?></p></li>
                             </li>

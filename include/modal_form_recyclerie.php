@@ -43,9 +43,9 @@
 </div>
 <!-- Fin de id="modal_recyclerie" -->
 
-//Joindre le fichier source Jquery.js
+<!-- Joindre le fichier source Jquery.js -->
 <script src="js/jquery.js"></script>
-//Executer le script pour les actions sur le Modal
+<!-- Executer le script pour les actions sur le Modal -->
 <script src="js/modal_form_recyclerie.js"></script>
 
 <script>
